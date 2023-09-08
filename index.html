@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Profile card</title>
+  </head>
+  <body>
+    <main>
+      <div class="profile">
+        <div class="profile--details">
+          <div class="profile--details--img">
+            <img
+              src="./images/serah.jpg"
+              alt="korex"
+              data-testid="slackDisplayImage"
+            />
+          </div>
+
+          <div class="profile--details--info">
+            <p data-testid="slackUserName">Korex</p>
+            <p data-testid="myTrack">FrontEnd Development</p>
+          </div>
+        </div>
+
+        <div class="profile--link">
+          <div>
+            <a href="github.com/koredebanfe/profile-card" data-githubURL=""
+              >Github</a
+            >
+          </div>
+          <div>
+            <p class="show--day" data-testid="currentDayOfTheWeek"></p>
+            <p class="show--time" data-testid="currentUTCTime"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

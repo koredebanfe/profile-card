@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(./font/Manrope-Regular.ttf);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    background-size: 8rem, 10rem;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: myFont;
+}
+
+.profile {
+    width: 90vw;
+    padding: 100px 0;
+    font-family: myFont;
+    border-radius: 200px;
+}
+
+.profile--details--img {
+    background-image: url(./images/bg-pattern-card.svg);
+    text-align: center;
+}
+
+.profile--details--info {
+    background-color: whitesmoke;
+    padding: 60px 0 40px;
+    text-align: center;
+
+}
+
+[data-testid="myTrack"] {
+    color: grey;
+    margin-top: 10px;
+}
+
+.profile--link {
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    border: 1px solid rgb(216, 214, 214);
+    padding: 20px 10px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+   .profile {
+    width: 30vw;
+   }
+}
